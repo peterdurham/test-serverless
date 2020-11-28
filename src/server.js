@@ -11,7 +11,7 @@ const typeDefs = gql`
 
 const resolvers = {
   Query: {
-    hello: () => "Hi! Love from @stemmlerjs 🤠."
+    hello: () => `Hi there ${process.env.TEST_NUM} 🤠.`
   }
 };
 
